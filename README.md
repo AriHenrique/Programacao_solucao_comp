@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-Guia de estudos das aulas do semestre 2023/01 UNA — Aimorés. Todos os exercícios são obrigatórios na linguagem "Python", determinada pelo professor responsável, entretanto, resolvi fazer também na linguagem "Rust", uma vez que já havia aprendido a linguagem python, decidi refazer tudo usando uma outra linguagem que busco aprender e aprimorar, transformando os exercícios de python em rust. Toda a documentação das respectivas linguagens estão lincadas nos ícones.
+Guia de estudos das aulas do semestre 2023/01 UNA — Aimorés. Todos os exercícios são obrigatórios na linguagem "Python", determinada pelo professor responsável, entretanto, resolvi fazer também na linguagem "Rust", uma vez que já havia aprendido a linguagem python. Decidi refazer tudo usando uma outra linguagem que busco aprender e aprimorar, transformando os exercícios de python em rust. Toda a documentação das respectivas linguagens estão lincadas nos ícones.
 
 ## <a href="https://docs.python.org/3/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width=40 align='sub'/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://devdocs.io/rust/'><img style="background-color: white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" width=40 align='text-top'/></a>
 
@@ -14,7 +14,7 @@ Calcule o salario bruto de acordo com o valor da hora e quantidade de horas trab
 
 ## Python <a href="https://docs.python.org/3/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width=30 align='text-top'/></a>
 
-```py
+```python
 print('Hello World')
 print('Aula dia 24/02/2023')
 
@@ -28,6 +28,7 @@ while True:
         total_liquido = valor_horas * horas_trabalhadas
 
         print(f"TOTAL A RECEBER SERÁ {total_liquido:.2f}")
+        break
     except ValueError:
         loop = input("digite apenas números, deseja continuar?(Y/n)").lower()
         if loop[0] == 'y':
@@ -40,7 +41,7 @@ while True:
 ## Rust <a href='https://devdocs.io/rust/'><img style="background-color: white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" width=30 align='text-top'/></a>
 
 
-```rs
+```rust
 use std::io;
 
 fn main() {

@@ -11,6 +11,7 @@ while True:
         total_liquido = valor_horas * horas_trabalhadas
 
         print(f"TOTAL A RECEBER SERÁ {total_liquido:.2f}")
+        break
     except ValueError:
         loop = input("digite apenas números, deseja continuar?(Y/n)").lower()
         if loop[0] == 'y':
