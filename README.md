@@ -84,3 +84,46 @@ fn main() {
     }
 }
 ```
+
+# Aula dia 27/02
+
+## Python <a href="https://docs.python.org/3/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width=30 align='text-top'/></a>
+
+
+```python
+number1 = 30
+number2 = 40
+
+resultador = number1+number2
+
+print(resultador)
+```
+
+## Rust <a href='https://devdocs.io/rust/'><img style="background-color: white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" width=30 align='text-top'/></a>
+
+```rust
+fn main() {
+    let number1 = 30;
+    let number2 = 40;
+
+    let result = number1+number2;
+
+    println!("{}", result);
+}
+```
+
+## Exemplo em Java
+
+```java
+public class Main
+{
+    public static void main(String[] args){
+        String numero1 = "Ana Maria";
+        String numero2 = "40";
+        String resultado = numero1 + numero2;
+        System.out.println(resultado);
+    }
+}
+```
+
+

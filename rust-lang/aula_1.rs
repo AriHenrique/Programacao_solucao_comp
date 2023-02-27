@@ -4,7 +4,7 @@ fn main() {
     println!("\nCALCULADORA DE SALARIO\n");
 
     let valor_horas: f64 = loop {
-        println!("informe o valor da hora trabalhada: ");
+        println!("informe valor da hora trabalhada: ");
         let input = get_input();
         match input.parse() {
             Ok(num) => break num,
@@ -35,7 +35,7 @@ fn main() {
         let mut input = String::new();
         io::stdin()
             .read_line(&mut input)
-            .expect("Erro ao ler a entrada");
+            .expect("Erro ao ler a entrada.");
         input.trim().to_string()
     }
 }
