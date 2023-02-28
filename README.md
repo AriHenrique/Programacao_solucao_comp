@@ -99,6 +99,27 @@ resultador = number1+number2
 print(resultador)
 ```
 
+1) Implemente um programa python que leia o nome de usuario e o dominio, produza a saida usuario@email
+
+2) Implemente um programa python que solicite ao usuario o valor de um produto. Considere uma taxa de 0.1 ao mes exiba o valor total em um periodo de 12 meses.
+
+```python
+# 1
+
+nome = input("Digite o seu nome: ")
+dominio = input("\nAgora digite o domínio: ")
+
+print(f"{nome}@{dominio}")
+
+# 2
+
+valor_produto = float(input("Digite o valor do produto: "))
+
+total = valor_produto + ((valor_produto * 0.1) * 12)
+
+print(f"O valor total do produto será 12x de R${total:.2f}")
+```
+
 ## Rust <a href='https://devdocs.io/rust/'><img style="background-color: white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" width=30 align='text-top'/></a>
 
 ```rust
@@ -112,12 +133,70 @@ fn main() {
 }
 ```
 
+```rust
+use std::io;
+
+fn get_input() -> String {
+        let mut input = String::new();
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Erro ao ler a entrada");
+        input.trim().to_string()
+    }
+
+
+fn exercice_1(){
+    
+    // exercice 1
+
+    println!("Digite o seu nome: ");
+    let mut nome = String::new();
+    io::stdin().read_line(&mut nome).expect("Falha ao ler a entrada do usuário");
+    nome = nome.trim().to_string();
+
+    println!("Agora digite o dominio: ");
+    let mut dominio = String::new();
+    io::stdin().read_line(&mut dominio).expect("Falha ao ler a entrada do usuário");
+    dominio = dominio.trim().to_string();
+    println!("{}@{}", nome, dominio);
+}
+
+
+fn exercice_2(){
+
+    // exercice 1
+
+    let valor_produto: f32 = loop {
+        println!("Digite o valor do produto: ");
+        let valor_produto = get_input();
+        break match valor_produto.parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Valor inválido para o produto!");
+                continue;
+            }
+        };    
+    };
+
+    let total = valor_produto + (valor_produto * 0.1 * 12.0);
+
+    println!("O total é: {:.2}", total);
+}
+
+
+fn main() {
+    exercice_1();
+    exercice_2();
+}
+```
+
 ## Exemplo em Java
 
+Breve exemplo de como seria em Java
+
 ```java
-public class Main
-{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         String numero1 = "Ana Maria";
         String numero2 = "40";
         String resultado = numero1 + numero2;
@@ -125,5 +204,3 @@ public class Main
     }
 }
 ```
-
-
