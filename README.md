@@ -94,9 +94,9 @@ fn main() {
 number1 = 30
 number2 = 40
 
-resultador = number1+number2
+resultado = number1+number2
 
-print(resultador)
+print(resultado)
 ```
 
 1) Implemente um programa python que leia o nome de usuario e o dominio, produza a saida usuario@email
@@ -112,12 +112,17 @@ dominio = input("\nAgora digite o domínio: ")
 print(f"{nome}@{dominio}")
 
 # 2
+while True:
+    try:
+        valor_produto = float(input("Digite o valor do produto: "))
 
-valor_produto = float(input("Digite o valor do produto: "))
+        total = valor_produto + ((valor_produto * 0.1) * 12)
 
-total = valor_produto + ((valor_produto * 0.1) * 12)
-
-print(f"O valor total do produto será 12x de R${total:.2f}")
+        print(f"O valor total do produto será R${total:.2f}")
+        break
+    except ValueError:
+        print("\nDigite apenas numeros\n")
+        continue
 ```
 
 ## Rust <a href='https://devdocs.io/rust/'><img style="background-color: white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" width=30 align='text-top'/></a>
@@ -142,12 +147,12 @@ fn get_input() -> String {
             .read_line(&mut input)
             .expect("Erro ao ler a entrada");
         input.trim().to_string()
-    }
+}
 
 
-fn exercice_1(){
+fn exercise_1(){
     
-    // exercice 1
+    // exercise 1
 
     println!("Digite o seu nome: ");
     let mut nome = String::new();
@@ -162,9 +167,9 @@ fn exercice_1(){
 }
 
 
-fn exercice_2(){
+fn exercise_2(){
 
-    // exercice 1
+    // exercise 1
 
     let valor_produto: f32 = loop {
         println!("Digite o valor do produto: ");
@@ -185,22 +190,7 @@ fn exercice_2(){
 
 
 fn main() {
-    exercice_1();
-    exercice_2();
-}
-```
-
-## Exemplo em Java
-
-Breve exemplo de como seria em Java
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        String numero1 = "Ana Maria";
-        String numero2 = "40";
-        String resultado = numero1 + numero2;
-        System.out.println(resultado);
-    }
+    exercise_1();
+    exercise_2();
 }
 ```

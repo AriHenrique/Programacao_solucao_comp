@@ -6,7 +6,7 @@ fn get_input() -> String {
             .read_line(&mut input)
             .expect("Erro ao ler a entrada");
         input.trim().to_string()
-    }
+}
 
 
 fn exercice_1(){
