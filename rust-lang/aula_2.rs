@@ -36,10 +36,10 @@ fn exercice_2(){
         break match valor_produto.parse() {
             Ok(num) => num,
             Err(_) => {
-                println!("Valor inválido para o produto!");
+                println!("Valor inválido! Digite apenas numeros");
                 continue;
             }
-        };    
+        }    
     };
 
     let total = valor_produto + (valor_produto * 0.1 * 12.0);

@@ -150,9 +150,9 @@ fn get_input() -> String {
 }
 
 
-fn exercise_1(){
+fn exercice_1(){
     
-    // exercise 1
+    // exercice 1
 
     println!("Digite o seu nome: ");
     let mut nome = String::new();
@@ -167,9 +167,9 @@ fn exercise_1(){
 }
 
 
-fn exercise_2(){
+fn exercice_2(){
 
-    // exercise 1
+    // exercice 1
 
     let valor_produto: f32 = loop {
         println!("Digite o valor do produto: ");
@@ -177,10 +177,10 @@ fn exercise_2(){
         break match valor_produto.parse() {
             Ok(num) => num,
             Err(_) => {
-                println!("Valor inválido para o produto!");
+                println!("Valor inválido! Digite apenas numeros");
                 continue;
             }
-        };    
+        }    
     };
 
     let total = valor_produto + (valor_produto * 0.1 * 12.0);
@@ -190,7 +190,7 @@ fn exercise_2(){
 
 
 fn main() {
-    exercise_1();
-    exercise_2();
+    exercice_1();
+    exercice_2();
 }
 ```
