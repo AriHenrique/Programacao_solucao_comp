@@ -106,7 +106,7 @@ while True:
         break
     elif tipo[0] == 'm':
         altura = verificar_float(input("Informe a altura em metros (Ex: 1.75m): "))
-        print(f'\nO peso ideal para a altura de {altura} de um HOMEM é {62.1 * altura - 44.7:.1f}kg\n')
+        print(f'\nO peso ideal para a altura de {altura} de uma MULHER é {62.1 * altura - 44.7:.1f}kg\n')
         break
     else:
         loop = input('Tipo de sexo informado inválido. Deseja continuar?(Y/n): ').lower()
