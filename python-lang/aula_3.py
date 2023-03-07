@@ -133,7 +133,6 @@ total_pescaria = verificar_float(input("Qual o "))
 # b. quanto pagou ao INSS.
 
 
-alteracao
 
 # C. quanto pagou ao sindicato.
 # d. o salário líquido.
