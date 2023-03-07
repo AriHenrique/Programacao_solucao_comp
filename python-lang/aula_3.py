@@ -16,6 +16,7 @@ def verificar_float(variavel):
                 quit()
 
 
+
 print('1) Faça um programa que mostre a mensagem "Alo mundo" na tela.\n')
 
 print("Hello World\n")
@@ -57,14 +58,14 @@ area = verificar_float(input("Informe o valor de um dos lados do QUADRADO: "))
 print(f'\nO dobro da área do quadrado é {area ** 2 * 2:.2f}\n')
 
 print('8) Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e '
-      'mostre o total do seu salário no referido mês.\n')
+    'mostre o total do seu salário no referido mês.\n')
 
 valor_horas = verificar_float(input("informe o valor da hora trabalhada: "))
 horas_trabalhadas = verificar_float(input("\ninforme quantas horas foram trabalhadas: "))
 print(f"\nTOTAL A RECEBER SERÁ R$ {valor_horas * horas_trabalhadas:.2f}\n")
 
 print('9) Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus '
-      'Celsius.\n')
+    'Celsius.\n')
 
 temperatura_f = verificar_float(input("Digite a temperatura em Farenheit: "))
 print(f'{temperatura_f:.1f}F equivale a {round((temperatura_f - 32) * (5 / 9)):.1f}C\n')
@@ -75,9 +76,9 @@ temperatura_c = verificar_float(input("Digite a temperatura em Celsius: "))
 print(f'{temperatura_c:.1f}C equivale a {round(temperatura_c * (9 / 5) + 32):.1f}F\n')
 
 print('11) Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:\n'
-      'a. o produto do dobro do primeiro com metade do segundo.\n'
-      'b. a soma do tiplo do primeiro com o terceiro.\n'
-      'c. o terceiro elevado ao cubo.\n')
+    'a. o produto do dobro do primeiro com metade do segundo.\n'
+    'b. a soma do tiplo do primeiro com o terceiro.\n'
+    'c. o terceiro elevado ao cubo.\n')
 
 num_int = int(verificar_float(input("Digite o primeiro numero inteiro: ")))
 num_int_2 = int(verificar_float(input("Digite o segundo numero inteiro: ")))
@@ -88,15 +89,15 @@ print(f'B = {3 * num_int + num_float}')
 print(f'C = {num_float ** 3}\n')
 
 print('12) Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, '
-      'usando a seguinte formula:\n(72.7*altura) - 58\n')
+    'usando a seguinte formula:\n(72.7*altura) - 58\n')
 
 altura = verificar_float(input("Informe a sua altura em metros (Ex: 1.75m): "))
 print(f'\nO peso ideal para a altura de {altura} é {72.7 * altura - 58:.1f}kg\n')
 
 print("13) Tendo como dado de entrada a altura (m) de uma pessoa, construa um algoritmo que calcule seu peso ideal, "
-      "utilizando as seguintes fórmulas:\n"
-      "a. Para homens: (72.7*m) - 58\n"
-      "b. Para mulheres: (62.1*m) - 44.7\n")
+    "utilizando as seguintes fórmulas:\n"
+    "a. Para homens: (72.7*m) - 58\n"
+    "b. Para mulheres: (62.1*m) - 44.7\n")
 
 while True:
     tipo = input("Gostaria de calcular para homem ou mulher? ").lower()
@@ -116,17 +117,24 @@ while True:
             print("\nNao foi possivel concluir o programa\n\nFim")
             break
 
+
 print("14. João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu \n"
-      "trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do \n"
-      "estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que vocè \n"
-      "faça um programa quilos além do limite e na variavel multa o valor da multa que João devera pagar. Imprima os \n"
-      "dados do programa com as mensagens adequadasS.")
+    "trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do \n"
+    "estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que vocè \n"
+    "faça um programa quilos além do limite e na variavel multa o valor da multa que João devera pagar. Imprima os \n"
+    "dados do programa com as mensagens adequadasS.")
+
+total_pescaria = verificar_float(input("Qual o "))
 
 # 15. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o
 # total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e
 # 5% para o Sindicat0, taça um programa que nos de:
 # a. salaro bruto.
 # b. quanto pagou ao INSS.
+
+
+alteracao
+
 # C. quanto pagou ao sindicato.
 # d. o salário líquido.
 # e. calcule os descontos e o salário líquido, conforme a tabela abaixo:
