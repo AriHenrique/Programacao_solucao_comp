@@ -17,6 +17,7 @@ def verificar_float(variavel):
 
 
 
+"""
 print('1) Faça um programa que mostre a mensagem "Alo mundo" na tela.\n')
 
 print("Hello World\n")
@@ -116,7 +117,7 @@ while True:
         else:
             print("\nNao foi possivel concluir o programa\n\nFim")
             break
-
+"""
 
 print("14. João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu \n"
     "trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do \n"
@@ -124,7 +125,11 @@ print("14. João Papo-de-Pescador, homem de bem, comprou um microcomputador para
     "faça um programa quilos além do limite e na variavel multa o valor da multa que João devera pagar. Imprima os \n"
     "dados do programa com as mensagens adequadasS.")
 
-total_pescaria = verificar_float(input("Qual o "))
+pescaria_dia = int(input("\nQuantos kg foram pescados hoje? "))
+
+if pescaria_dia > 50:
+    print((pescaria_dia-50)*4)
+
 
 # 15. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o
 # total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e
