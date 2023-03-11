@@ -95,7 +95,7 @@ print('12) Tendo como dados de entrada a altura de uma pessoa, construa um algor
       'usando a seguinte formula:\n(72.7*altura) - 58\n')
 
 altura = verificar_float(input("Informe a sua altura em metros (Ex: 1.75m): "))
-print(f'\nO peso ideal para a altura de {altura} é {72.7 * altura - 58:.1f}kg\n')
+print(f'\nO peso ideal para a altura de {altura}m é {72.7 * altura - 58:.1f}kg\n')
 
 print("13) Tendo como dado de entrada a altura (m) de uma pessoa, construa um algoritmo que calcule seu peso ideal, "
       "utilizando as seguintes fórmulas:\n"
